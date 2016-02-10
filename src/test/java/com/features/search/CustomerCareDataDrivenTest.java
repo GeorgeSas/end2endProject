@@ -39,8 +39,8 @@ public class CustomerCareDataDrivenTest {
 
 	@Steps
 	public CustomerCareSteps customerCareSteps;
-	
-	@Steps 
+
+	@Steps
 	public IMAPHelper imapHelper;
 
 	@Test
@@ -49,25 +49,12 @@ public class CustomerCareDataDrivenTest {
 		navigationSteps.open_homepage_and_maximize_window();
 		navigationSteps.go_to_the_customer_care_page();
 
-		customerCareSteps.fill_in_form(name, email, subject, message);		
-		//customerCareSteps.check_response_message_is(response);
+		customerCareSteps.fill_in_form(name, email, subject, message);
 
 		customerCareSteps.waitABit(7000);
-		
-		//customerCareSteps.check_email_subject_is("New message via your Wix website, from  " + email);
-		//customerCareSteps.check_body_content_is(email);
-	
+
 		customerCareSteps.verify_no_emails_are_sent_for_invalid_form_completion();
-		
-		
+
 	}
-	
-	
-	
-	
-	
-	
-	
-	
 
 }

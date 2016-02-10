@@ -102,10 +102,10 @@ public class AddToCartTest {
 		navigationSteps.open_homepage_and_maximize_window();
 		navigationSteps.click_the_shop_button_from_home_page();
 
-		navigationSteps.open_quick_view_for_nth_product(0);
-		productSteps.select_quantity_from_quick_view(3);
-		productSteps.add_to_cart_from_quick_view();
-		navigationSteps.close_curtain_for_nth_product();
+		//navigationSteps.open_quick_view_for_nth_product(0);
+		//productSteps.select_quantity_from_quick_view(3);
+		//productSteps.add_to_cart_from_quick_view();
+		//navigationSteps.close_curtain_for_nth_product();
 
 		navigationSteps.click_on_nth_product(1);
 		productSteps.select_quantity_from_product_page(1);
