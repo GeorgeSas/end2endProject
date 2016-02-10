@@ -34,22 +34,22 @@ public class AddToCartTest {
 	@Steps
 	public SaleSteps saleSteps;
 
-	//@Test
+	@Test
 	public void add_to_cart_using_quick_view_and_product_view() {
 
 		navigationSteps.open_homepage_and_maximize_window();
 		navigationSteps.click_the_shop_button_from_home_page();
 
-		navigationSteps.open_quick_view_for_nth_product(0);
-		productSteps.select_quantity_from_quick_view(3);
-		productSteps.add_to_cart_from_quick_view();
-		navigationSteps.close_curtain_for_nth_product();
+		//navigationSteps.open_quick_view_for_nth_product(0);
+		//productSteps.select_quantity_from_quick_view(3);
+		//productSteps.add_to_cart_from_quick_view();
+		//navigationSteps.close_curtain_for_nth_product();
 
-		navigationSteps.click_on_nth_product(1);
-		productSteps.select_quantity_from_product_page(1);
-		productSteps.add_to_cart_from_product_page();
+		//navigationSteps.click_on_nth_product(1);
+		//productSteps.select_quantity_from_product_page(1);
+		//productSteps.add_to_cart_from_product_page();
 
-		navigationSteps.view_cart();
+		//navigationSteps.view_cart();
 
 		// cartSteps.assert_number_of_product_types_in_cart(1);
 		// cartSteps.assert_total_number_of_products_in_cart(6);
