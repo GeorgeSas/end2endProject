@@ -119,7 +119,7 @@ public class AddToCartTest {
 		navigationSteps.waitABit(2000);
 	}
 
-	@Test
+	//@Test
 	public void increase_or_decrease_product_quantity_from_the_cart() {
 
 		navigationSteps.open_homepage_and_maximize_window();
