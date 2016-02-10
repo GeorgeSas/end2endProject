@@ -41,7 +41,7 @@ public class ShopPage extends PageObject {
     public void move_mouse_over_nth_product_and_click_on_it(int n) {
     	Actions builder = new Actions(getDriver());
     	
-    	builder.moveToElement(productImageList.get(n));
+    	builder.moveToElement(imageToClickList.get(n));
     	builder.perform();
     	
     	imageToClickList.get(n).click();
